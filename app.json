@@ -1,0 +1,25 @@
+{
+    "name": "FRP",
+    "description": "Deploy FRP on Heroku.",
+    "keywords": ["FRP"],
+    "env": {
+        "FRPURL": {
+            "description": "用户用于部署的FRP服务端，请直接提供服务端下载直链！",
+            "value": "无示范"
+        },
+        "CONFIGURL": {
+            "description": "用户用于部署的FRP服务端对应的配置文件，请直接提供配置文件下载直链！",
+            "value": "无示范"
+        },
+        "UID": {
+            "description": "在樱花FRP的链接UID",
+            "value": "无示范"
+        },
+        "RID": {
+            "description": "在樱花FRP创建的用于数据传输的隧道id",
+            "value": "无示范"
+        }
+    },
+    "repository": "https://github.com/Wuqibor/FRP-Herkou",
+    "stack": "container"
+}
