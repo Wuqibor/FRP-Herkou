@@ -13,7 +13,6 @@ cat << EOF > /usr/local/frp/frps.ini
 bind_port = $FRPSERVERPORT
 token = $FRPSERVERTOKEN
 kcp_bind_port = $FRPSERVERPORT
-vhost_http_port = 80
 vhost_https_port = 443
 EOF
 
