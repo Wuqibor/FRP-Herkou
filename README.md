@@ -1,4 +1,4 @@
-# FRP Heroku (On Sakura FRP)
+# FRP Heroku (On Sakura FRP)   ————终极白嫖计划
 
 ## 概述
 
