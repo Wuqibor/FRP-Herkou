@@ -18,7 +18,9 @@
 
 `FRPURL` > `用户用于部署的FRP服务端，请直接提供服务端下载直链！`。
 
-`CONFIGURL` > `用户用于部署的FRP服务端对应的配置文件，请直接提供配置文件下载直链！`。
+`FRPSERVERPORT` > `填写内部FRP服务的数据端口，也就是SakuraFRP隧道的本地端口(KCP同本端口，如需修改请手动Fork项目修改)`。
+
+`FRPSERVERTOKEN` > `填写内部FRP服务的Token鉴权密匙`。
 
 `UID` > `在SakuraFRP的链接UID`。
 
