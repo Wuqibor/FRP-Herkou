@@ -18,7 +18,7 @@ EOF
 
 #下载Screen
 mkdir /usr/local/screen
-curl -L -H "Cache-Control: no-cache" -o /usr/local/screen/screen https://github.com/Wuqibor/FRP-Herkou/blob/main/screen?raw=true
+curl -L -H "Cache-Control: no-cache" -o /usr/local/screen/screen https://raw.githubusercontent.com/Wuqibor/FRP-Herkou/main/screen
 
 #修正权限
 chmod +x /usr/local/yhfrp/yhfrpc
