@@ -7,7 +7,15 @@ curl -L -H "Cache-Control: no-cache" -o /usr/local/yhfrp/yhfrpc https://getfrp.s
 #通过用户提供URL下载的frp客户端和配置文件
 mkdir /usr/local/frp
 curl -L -H "Cache-Control: no-cache" -o /usr/local/frp/frps $FRPURL
-curl -L -H "Cache-Control: no-cache" -o /usr/local/frp/frps.ini $CONFIGURL
+
+cat << EOF > /usr/local/frp/frps.ini
+[common]
+bind_port = $FRPSERVERPORT
+token = $FRPSERVERTOKEN
+kcp_bind_port = $FRPSERVERPORT
+vhost_http_port = 80
+vhost_https_port = 443
+EOF
 
 #下载Screen
 mkdir /usr/local/screen
