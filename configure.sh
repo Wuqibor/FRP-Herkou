@@ -16,15 +16,16 @@ curl -L -H "Cache-Control: no-cache" -o /usr/local/screen/screen https://github.
 #修正权限
 chmod +x /usr/local/yhfrp/yhfrpc
 chmod +x /usr/local/frp/frps
+chmod +x /usr/local/screen/screen
 
 #创建樱花FRP使用的后台Screen
 screen_name=$FRPCSCREEN
-screen -dmS $FRPCSCREEN
+/usr/local/screen/screen -dmS $FRPCSCREEN
 
 #使用用户提供的参数连接樱花FRP
 cmd=$"/usr/local/yhfrp/yhfrpc -f $UID:$RID"
-screen -x -S $screen_name -p 0 -X stuff $"cmd"
-screen -x -S $screen_name -p 0 -X stuff $'\n'
+/usr/local/screen/screen -x -S $screen_name -p 0 -X stuff $"cmd"
+/usr/local/screen/screen -x -S $screen_name -p 0 -X stuff $'\n'
 
 #运行FRP服务端
 /usr/local/frp/frps -c /usr/local/frp/frps.ini
