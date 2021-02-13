@@ -5,15 +5,15 @@
     "env": {
         "FRPURL": {
             "description": "用户用于部署的FRP服务端，请直接提供服务端下载直链！",
-            "value": "无示范"
+            "value": "https://raw.githubusercontent.com/Wuqibor/FRP-Herkou/main/screen"
         },
         "FRPSERVERPORT": {
             "description": "填写内部FRP服务的数据端口，也就是SakuraFRP隧道的本地端口(KCP同本端口，如需修改请手动Fork项目修改)",
-            "value": "无示范"
+            "value": "7000"
         },
         "FRPSERVERTOKEN": {
             "description": "填写内部FRP服务的Token鉴权密匙",
-            "value": "无示范"
+            "value": "admin"
         },
         "UID": {
             "description": "在樱花FRP的链接UID",
